@@ -4,11 +4,17 @@
   "description": "test",
   "scripts": {
     "doc": "jsdoc -c jsdoc.conf.json",
-    "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
+    "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose",
+    "apidoc" : "apidoc -i src -o documentacion "
   },
   "devDependencies": {
+    "apidoc": "^0.17.7",
     "jsdoc": "^3.5.5",
     "toast-jsdoc": "^1.0.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "apidoc": {
+    "title": "Custom apiDoc browser title",
+    "url" : "https://api.github.com/v1"
+  }
 }
